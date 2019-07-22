@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weatherwidgetcolorbg"
+    android:layout_width="332px"
+    android:layout_height="500px"
+    android:clickable="true" >
+
+    <ImageView
+        android:id="@+id/weatherwidgetcolormask"
+        android:layout_width="332px"
+        android:layout_height="500px"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/weatherwidget"
+        android:layout_width="332px"
+        android:layout_height="500px"
+        android:background="@drawable/weather_widget_default_bg"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!--图标-->
+        <ImageView
+            android:id="@+id/img_widget_weather_icon"
+            android:layout_width="136px"
+            android:layout_height="136px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70px"
+            />
+
+        <RelativeLayout
+            android:id="@+id/weather_time_widget_rl"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+           android:layout_marginTop="200px"
+            >
+
+        </RelativeLayout>
+
+        <!--天气现象-->
+        <TextView
+            android:id="@+id/condition_text"
+            android:layout_width="160px"
+            android:layout_height="40px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25px"
+            android:layout_marginLeft="25px"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="26px"
+            android:text="@string/sunday"
+            android:visibility="gone"
+            >
+        </TextView>
+
+         <!-- weather widget current temp 33du -->
+
+        <!--温度-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="196px"
+             >
+
+            <!-- weather current temp num -->
+
+            <TextView
+                android:id="@+id/curt_temp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="@string/hourstring"
+                android:textColor="@color/white"
+                android:textSize="56px"
+                />
+
+            <!-- weather current temp icon -->
+
+            <ImageView
+                android:layout_width="10px"
+                android:layout_height="10px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/weather_unit_small_temp" />
+        </LinearLayout>
+
+        <!--城市-->
+         <TextView
+             android:id="@+id/city_text"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:ellipsize="marquee"
+             android:focusable="true"
+             android:focusableInTouchMode="true"
+             android:marqueeRepeatLimit="marquee_forever"
+             android:singleLine="true"
+             android:text="@string/guangzhou"
+             android:textColor="@color/white"
+             android:textSize="24px"
+             android:layout_marginLeft="45px"
+             android:layout_marginBottom="35px"
+             />
+
+         <!-- weather widget low to hight temp 18~33du -->
+
+        <LinearLayout
+            android:layout_width="120px"
+            android:layout_height="40px"
+            android:layout_toRightOf="@id/img_widget_weather_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3px"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/txt_widget_low_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_temp_data"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:text="@string/low_to_hight_symbol"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_text_size" />
+
+            <TextView
+                android:id="@+id/txt_widget_hight_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_temp_data"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/degree_celsius"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_text_size" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/weather_time_widget_rl2"
+            android:layout_width="match_parent"
+            android:layout_height="153px"></RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/weather_in_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            >
+            <ImageView
+                android:layout_width="10px"
+                android:layout_height="35px"
+                android:layout_marginLeft="7px"
+                android:layout_marginTop="71px"
+                android:background="@drawable/time_two_point"
+                android:clickable="false"
+                android:layout_toRightOf="@+id/time_hour_text"
+                />
+
+        <TextView
+            android:id="@+id/time_hour_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hourstring"
+            android:textColor="@color/white"
+            android:textSize="80px"
+            android:layout_marginTop="29px"
+            />
+        <TextView
+            android:id="@+id/time_min_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19px"
+            android:layout_marginTop="29px"
+            android:text="@string/minutesstring"
+            android:textColor="@color/white"
+            android:textSize="80px"
+            android:layout_toRightOf="@+id/time_hour_text"
+            />
+
+
+
+            <!--<include layout="@layout/time_hour" />-->
+            <!--<include layout="@layout/time_minute" />-->
+            <!--<FrameLayout
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="79px"
+                android:background="#0000"
+                android:clickable="false" >
+
+                <include layout="@layout/time_hour" />
+
+
+            <FrameLayout
+                android:id="@+id/minLayout"
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:layout_marginLeft="95px"
+                android:layout_marginTop="79px"
+                android:background="#0000"
+                android:clickable="false"  >
+
+                <include layout="@layout/time_minute" />
+            </FrameLayout>-->
+
+           <TextView
+                android:id="@+id/time_ampm_text"
+                android:layout_width="60px"
+                android:layout_height="30px"
+                android:layout_x="205px"
+                android:layout_y="35px"
+                android:background="#0000"
+                android:text="@string/ampm"
+                android:textColor="#00ad82"
+                android:textSize="20px"
+                android:clickable="false"
+                android:layout_toRightOf="@+id/time_min_text"
+                android:layout_marginTop="43px"
+                android:visibility="gone"
+               />
+
+            <ImageView
+                android:id="@+id/timelogo"
+                android:layout_width="23px"
+                android:layout_height="18px"
+                android:layout_x="245px"
+                android:layout_y="40px"
+                android:clickable="false"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/week_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:text="@string/week"
+                android:textColor="@color/white"
+                android:textSize="24px"
+                android:clickable="false"
+                android:layout_toRightOf="@+id/date_text"
+                android:layout_marginLeft="11px"
+                />
+
+            <TextView
+                android:id="@+id/date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weather_dateformat"
+                android:textColor="@color/white"
+                android:textSize="24px"
+                android:clickable="false"
+                android:layout_marginLeft="9px"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

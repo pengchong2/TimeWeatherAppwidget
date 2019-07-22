@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125px"
+    android:background="@drawable/last_few_days_weather_bg">
+
+    <TextView
+        android:id="@+id/txt_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36px"
+        android:text="@string/Wednesday"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11px"
+        android:layout_marginTop="31px"
+        android:layout_toRightOf="@+id/txt_week"
+        android:gravity="center"
+        android:text="@string/no_temp_data"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id="@+id/img_weather_smart_icon"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_centerInParent="true"
+        android:src="@drawable/weather_sunny_d" />
+
+
+    <TextView
+        android:id="@+id/txt_weather_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_date"
+        android:layout_marginTop="51px"
+        android:gravity="center"
+        android:text="@string/weather_num_00"
+        android:textColor="@color/white"
+        android:textSize="22px"
+        android:visibility="gone"
+        />
+
+    <include
+        layout="@layout/temperature_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29px"
+        android:id="@+id/weather_time_temperature"
+         />
+
+    <!--风向-->
+    <TextView
+        android:id="@+id/weather_time_detail_windDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guangzhou"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/weather_time_temperature"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/weather_time_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30px"
+        android:visibility="gone"
+        />
+
+    <!--风速-->
+    <TextView
+        android:id="@+id/weather_time_detail_windSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="7px"
+        android:layout_toRightOf="@+id/weather_time_line"
+        android:text="@string/smart_weather_wind_speed1"
+        android:textColor="@color/white"
+        android:textSize="22px"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

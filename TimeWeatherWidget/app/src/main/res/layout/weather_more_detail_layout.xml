@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/moredetaillistitemview_layout_width"
+        android:layout_height="@dimen/listitemview_layout_height" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:drawablePadding="5px"
+            android:gravity="center_vertical"
+            android:paddingLeft="20px"
+            android:text="@string/windspeed"
+            android:textSize="28px" />
+        <!--android:drawableLeft="@drawable/detail_wind"-->
+
+        <TextView
+            android:id="@+id/txt_wind_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:text="@string/smart_weather_wind_speed0"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/moredetaillistitemview_layout_width"
+        android:layout_height="@dimen/listitemview_layout_height" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:drawablePadding="5px"
+            android:gravity="center_vertical"
+            android:paddingLeft="20px"
+            android:text="@string/winddirection"
+            android:textSize="28px" />
+        <!--android:drawableLeft="@drawable/detail_wind"-->
+
+        <TextView
+            android:id="@+id/txt_wind_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:text="@string/smart_weather_wind_direct0"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/moredetaillistitemview_layout_width"
+        android:layout_height="@dimen/listitemview_layout_height" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:drawablePadding="5px"
+            android:gravity="center_vertical"
+            android:paddingLeft="20px"
+            android:text="@string/sunrise"
+            android:textSize="28px" />
+        <!--android:drawableLeft="@drawable/detail_uvindex"-->
+
+        <TextView
+            android:id="@+id/txt_sunrise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:text="@string/sunrise"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/moredetaillistitemview_layout_width"
+        android:layout_height="@dimen/listitemview_layout_height" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:drawablePadding="5px"
+            android:gravity="center_vertical"
+            android:paddingLeft="20px"
+            android:text="@string/sunset"
+            android:textSize="28px" />
+        <!--android:drawableLeft="@drawable/detail_uvindex"-->
+
+        <TextView
+            android:id="@+id/txt_sunset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:text="@string/sunset"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+</LinearLayout>

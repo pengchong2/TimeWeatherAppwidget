@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Weather</string>
+    <string name="title">Weather Forecast</string>
+    <string name="deletecity">Delete</string>
+    <string name="addcity">insert</string>
+    <string name="Today">Today</string>
+    <string name="Monday">Mon</string>
+    <string name="Tuesday">Tue</string>
+    <string name="Wednesday">Wed</string>
+    <string name="Thursday">Thu</string>
+    <string name="Friday">Fri</string>
+    <string name="Saturday">Sat</string>
+    <string name="Sunday">Sun</string>
+    <string name="nettoast">No cennection.Please open the connection</string>
+    <string name="guangzhou">GuangZhou</string>
+    <string name="guangzhou_pinyin">Guangzhou</string>
+    <string name="citynum_limit">Four cities most for inquires~~</string>
+    <string name="had_existed">The record has existed~</string>
+    <string name="showToast">Updating in the background..</string>
+    <string name="back">Back</string>
+    <string name="button_add_city">Add City</string>
+    <string name="choose_city">Choose City</string>
+    <string name="loading">Loading...</string>
+    <string name="nullstring"></string>
+
+    <string name="weather_time_loading_text">Loading...</string>
+    <!-- 天气种类名称定义 -->
+    <!--
+         <string name="yweather_num_00">Tornado</string>
+    <string name="yweather_num_01">Tropical Storm</string>
+    <string name="yweather_num_02">Hurricane</string>
+    <string name="yweather_num_03">Severe Thunderstorms</string>
+    <string name="yweather_num_04">Thunderstorms</string>
+    <string name="yweather_num_05">Mixed Rain and Snow</string>
+    <string name="yweather_num_06">Mixed Rain and Sleet</string>
+    <string name="yweather_num_07">Mixed Snow and Sleet</string>
+    <string name="yweather_num_08">Freezing Drizzle</string>
+    <string name="yweather_num_09">Drizzle</string>
+    <string name="yweather_num_10">Freezing Rain</string>
+    <string name="yweather_num_11">Showers</string>
+    <string name="yweather_num_12">Showers</string>
+    <string name="yweather_num_13">Snow Flurries</string>
+    <string name="yweather_num_14">Light Snow Showers</string>
+    <string name="yweather_num_15">Blowing Snow</string>
+    <string name="yweather_num_16">Snow</string>
+    <string name="yweather_num_17">Hail</string>
+    <string name="yweather_num_18">Sleet</string>
+    <string name="yweather_num_19">Dust</string>
+    <string name="yweather_num_20">Fog</string>
+    <string name="yweather_num_21">Haze</string>
+    <string name="yweather_num_22">Smoky</string>
+    <string name="yweather_num_23">Blustery</string>
+    <string name="yweather_num_24">Windy</string>
+    <string name="yweather_num_25">Cold</string>
+    <string name="yweather_num_26">Cloudy</string>
+    <string name="yweather_num_27">Mostly Cloudy</string>
+    <string name="yweather_num_28">Mostly Cloudy</string>
+    <string name="yweather_num_29">Partly Cloudy </string>
+    <string name="yweather_num_30">Partly Cloudy </string>
+    <string name="yweather_num_31">Clear</string>
+    <string name="yweather_num_32">Sunny</string>
+    <string name="yweather_num_33">Fair</string>
+    <string name="yweather_num_34">Fair</string>
+    <string name="yweather_num_35">Mixed Rain and Hail</string>
+    <string name="yweather_num_36">Hot</string>
+    <string name="yweather_num_37">Isolated Thunderstorms</string>
+    <string name="yweather_num_38">Scattered Thunderstorms</string>
+    <string name="yweather_num_39">Scattered Thunderstorms</string>
+    <string name="yweather_num_40">Scattered Showers</string>
+    <string name="yweather_num_41">Heavy Snow</string>
+    <string name="yweather_num_42">Scattered Snow Showers</string>
+    <string name="yweather_num_43">Heavy Snow</string>
+    <string name="yweather_num_44">Partly Cloudy</string>
+    <string name="yweather_num_45">Thundershowers</string>
+    <string name="yweather_num_46">Snow Showers</string>
+    <string name="yweather_num_47">Isolated Thundershowers</string>
+    <string name="yweather_ds_na">Not Available</string>
+    <string name="datafromyahoo"></string>
+    -->
+
+    <string name="neworkconnect">Plese Check Nework Connect!</string>
+    <string name="nullsearch">No Result,Plese Repeat Input!</string>
+    <string name="connectiontimeout">Connect Time Out,Plese Repeat Seacher.</string>
+    <string name="addcity_title">Add City</string>
+    <string name="entercity">Enter the City</string>
+    <string name="refesh">Fresh</string>
+    <string name="humidity">Humidity</string>
+    <string name="visibility">Visibility</string>
+    <string name="wind">Wind</string>
+    <string name="chill">Feels Like</string>
+    <string name="sun_and_moon">Day</string>
+    <string name="searchcity">Search</string>
+
+    <!-- 风向定义 -->
+    <string name="N">N</string>
+    <string name="NE">NE</string>
+    <string name="E">E</string>
+    <string name="SE">SE</string>
+    <string name="S">S</string>
+    <string name="SW">SW</string>
+    <string name="W">W</string>
+    <string name="NW">NW</string>
+    <string name="updatetime">Updated  %1$s  %2$s</string>
+    <string name="weather_timeformat">EE,MM/dd</string>
+    <string name="weather_weekformat">EE</string>
+    <string name="weather_dateformat">MM/dd</string>
+    <string name="weather_num_00">Sunny</string>
+    <string name="weather_num_01">Cloudy</string>
+    <string name="weather_num_02">Overcast</string>
+    <string name="weather_num_03">Shower</string>
+    <string name="weather_num_04">Thundershower</string>
+    <string name="weather_num_05">Thundershower with hail</string>
+    <string name="weather_num_06">Sleet</string>
+    <string name="weather_num_07">Light rain</string>
+    <string name="weather_num_08">Moderate rain</string>
+    <string name="weather_num_09">Heavy rain</string>
+    <string name="weather_num_10">Storm</string>
+    <string name="weather_num_11">Heavy storm</string>
+    <string name="weather_num_12">Severe storm</string>
+    <string name="weather_num_13">Snow flurry</string>
+    <string name="weather_num_14">Light snow</string>
+    <string name="weather_num_15">Moderate snow</string>
+    <string name="weather_num_16">Heavy snow</string>
+    <string name="weather_num_17">Snowstorm</string>
+    <string name="weather_num_18">Foggy</string>
+    <string name="weather_num_19">Ice rain</string>
+    <string name="weather_num_20">Duststorm</string>
+    <string name="weather_num_21">Light to moderate rain</string>
+    <string name="weather_num_22">Moderate to heavy rain</string>
+    <string name="weather_num_23">Heavy rain to storm</string>
+    <string name="weather_num_24">Storm to heavy storm</string>
+    <string name="weather_num_25">Heavy to severe storm</string>
+    <string name="weather_num_26">Light to moderate snow</string>
+    <string name="weather_num_27">Moderate to heavy snow</string>
+    <string name="weather_num_28">Heavy snow to snowstorm</string>
+    <string name="weather_num_29">Dust</string>
+    <string name="weather_num_30">Sand</string>
+    <string name="weather_num_31">Sandstorm</string>
+    <string name="weather_num_53">Haze</string>
+    <string name="weather_num_99">Unknown</string>
+    <string name="weather_num_100"></string>
+
+    <!--
+    风向编号 中文名称 英文名称 风力编号 中文名称 英文名称
+0 无持续风向 No wind 0 微风 <10m/h
+1 东北风 Northeast 1 3-4 级 10~17m/h
+2 东风 East 2 4-5 级 17~25m/h
+3 东南风 Southeast 3 5-6 级 25~34m/h
+4 南风 South 4 6-7 级 34~43m/h
+5 西南风 Southwest 5 7-8 级 43~54m/h
+6 西风 West 6 8-9 级 54~65m/h
+7 西南风 Northwest 7 9-10 级 65~77m/h
+8 北风 North 8 10-11 级 77~89m/h
+9 旋转风 Whirl wind 9 11-12 级 89~102m/h
+    -->
+    <string name="smart_weather_wind_direct0">No wind</string>
+    <string name="smart_weather_wind_direct1">Northeast</string>
+    <string name="smart_weather_wind_direct2">East</string>
+    <string name="smart_weather_wind_direct3">Southeast</string>
+    <string name="smart_weather_wind_direct4">South</string>
+    <string name="smart_weather_wind_direct5">Southwest</string>
+    <string name="smart_weather_wind_direct6">West</string>
+    <string name="smart_weather_wind_direct7">Northwest</string>
+    <string name="smart_weather_wind_direct8">North</string>
+    <string name="smart_weather_wind_direct9">Whirl wind</string>
+    <string name="smart_weather_wind_speed0">10m/h</string>
+    <string name="smart_weather_wind_speed1">10~17m/h</string>
+    <string name="smart_weather_wind_speed2">17~25m/h</string>
+    <string name="smart_weather_wind_speed3">25~34m/h</string>
+    <string name="smart_weather_wind_speed4">34~43m/h</string>
+    <string name="smart_weather_wind_speed5">43~54m/h</string>
+    <string name="smart_weather_wind_speed6">54~65m/h</string>
+    <string name="smart_weather_wind_speed7">65~77m/h</string>
+    <string name="smart_weather_wind_speed8">77~89m/h</string>
+    <string name="smart_weather_wind_speed9">89~102m/h</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="winddirection">Winddirection</string>
+    <string name="windspeed">Windspeed</string>
+    <string name="degree_celsius">°C</string>
+    <string name="degree">°</string>
+    <string name="low_to_hight_symbol">~</string>
+    <string name="no_temp_data">--</string>
+    <string name="no_weather_data">Weather</string>
+
+    <string name="search">Search</string>
+    <!--支持日夜模式-->
+    <string name="skin_support_day_night_mode">support</string>
+
+
+    <string name="sunday" >Sunday</string>
+    <string name="monday" >Monday</string>
+    <string name="tuesday" >Tuesday</string>
+    <string name="wednesday" >Wednesday</string>
+    <string name="thursday" >Thursday</string>
+    <string name="friday" >Friday</string>
+    <string name="saturday">Saturday</string>
+
+    <string name="ampm">AM</string>
+    <string name="date">2012-10-10</string>
+    <string name="week">Saturday</string>
+    <string name="hourstring">12</string>
+    <string name="minutesstring">12</string>
+    <string name="alarm">Full hour chime</string>
+    <string name="alarmclose">Full hour chime</string>
+    <string name="alarmopen">Full hour chime</string>
+    <string name="atimeSetText">Set Time</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="gps">Use GPS Time</string>
+
+
+    <string name="need_change_color">yes</string>
+    <string name="need_change_time_formate">yes</string>
+
+    <string name="dateformat">dd-MM-yyyy</string>
+    <string name="time_use_gps_time">Use GPS Time</string>
+
+
+</resources>

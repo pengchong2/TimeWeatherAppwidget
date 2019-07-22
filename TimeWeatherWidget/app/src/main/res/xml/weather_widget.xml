@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	在一个XML文件中描述Widget元数据，
+	定义一个Widget的基本特性，
+	例如布局尺寸，android:minWidth="30dip" android:minHeight="30dip" 
+	初始布局资源，android:initialLayout="@layout/main"
+	刷新频率(1.5以后已经没有用了)，android:updatePeriodMillis="400000" 
+	以及（可选的）创建时加载的一个配置活动。
+	  	android:updatePeriodMillis="43200000" 
+	  	"cn.flyaudio.Weather.ConfigureActivity"
+	  	//android:configure="cn.flyaudio.Weather.ConfigureActivity"
+ --><!-- android:initialLayout="@layout/weather_loading" -->
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:minWidth="252px" 
+  	android:minHeight="157px" 
+	android:updatePeriodMillis="0"
+	android:previewImage="@drawable/weather_preview"
+	android:initialLayout="@layout/widget_layout"
+  	>
+</appwidget-provider>

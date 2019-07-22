@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="city1">澳门</string>
+    <string name="city2">北京</string>
+    <string name="city3">长春</string>
+    <string name="city4">长沙</string>
+    <string name="city5">重庆</string>
+    <string name="city6">大连</string>
+    <string name="city7">福州</string>
+    <string name="city8">广州</string>
+    <string name="city9">贵阳</string>
+    <string name="city10">哈尔滨</string>
+    <string name="city11">海口</string>
+    <string name="city12">呼和浩特</string>
+    <string name="city13">杭州</string>
+    <string name="city14">合肥</string>
+    <string name="city15">济南</string>
+    <string name="city16">昆明</string>
+    <string name="city17">兰州</string>
+    <string name="city18">拉萨</string>
+    <string name="city19">南昌</string>
+    <string name="city20">南京</string>
+    <string name="city21">南宁</string>
+    <string name="city22">宁波</string>
+    <string name="city23">上海</string>
+    <string name="city24">沈阳</string>
+    <string name="city25">石家庄</string>
+    <string name="city26">苏州</string>
+    <string name="city27">台北</string>
+    <string name="city28">太原</string>
+    <string name="city29">武汉</string>
+    <string name="city30">乌鲁木齐</string>      
+    <string name="city31">西安</string>
+    <string name="city32">西宁</string>
+    <string name="city33">厦门</string>
+    <string name="city34">香港</string>
+    <string name="city35">银川</string>
+    <string name="city36">郑州</string>   
+  
+</resources>
+
+

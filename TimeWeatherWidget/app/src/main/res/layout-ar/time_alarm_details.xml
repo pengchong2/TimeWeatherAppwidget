@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff0000"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/time_tittle_bg"
+            android:orientation="horizontal" >
+            
+			<TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="12px"
+	            android:layout_marginTop="13px"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:text="@string/atimeSetText"
+	            android:textSize="28sp" />
+            <Button
+                android:id="@+id/back1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/time_back_style"
+                android:gravity="bottom|center_horizontal"
+                android:layout_marginRight="12px"
+                android:layout_marginTop="6px">
+            </Button>
+
+        </RelativeLayout>
+        
+        <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:gravity="center_horizontal"
+             android:layout_marginTop="80px"
+
+            >
+            <!--android:background="@drawable/mengban"-->
+
+            <RelativeLayout
+                android:layout_width="1001px"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp" 
+                >
+
+                <Button
+                    android:id="@+id/box1"
+                    android:layout_width="184px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:id="@+id/alarmText"
+                    android:layout_width="813px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/on"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/time_word_bg"
+                    android:gravity="center_vertical"
+                    android:paddingRight="20px"
+                    android:text="@string/alarm"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp" />
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="1001px"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/timeSet"
+                android:layout_width="813px"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/box2"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/time_word_bg"
+                android:gravity="center_vertical"
+                android:text="@string/atimeSetText"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                android:paddingRight="20px"/>
+
+            <Button
+                android:id="@+id/box2"
+                android:layout_width="184px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/time_settime" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="1001px"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:visibility="invisible"
+             >
+
+            <Button
+                android:id="@+id/box3"
+                android:layout_width="184px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_width="813px"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/on"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/time_word_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="40px"
+                android:text="@string/gps"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+        </RelativeLayout>
+        
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

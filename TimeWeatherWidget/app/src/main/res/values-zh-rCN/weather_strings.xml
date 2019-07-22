@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">天气</string>
+    <string name="title">天气预报</string>
+    <string name="deletecity">删除</string>
+    <string name="addcity">添加</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="Today">今天</string>
+    <string name="Monday">周一</string>
+    <string name="Tuesday">周二</string>
+    <string name="Wednesday">周三</string>
+    <string name="Thursday">周四</string>
+    <string name="Friday">周五</string>
+    <string name="Saturday">周六</string>
+    <string name="Sunday">周日</string>
+    <string name="nettoast">当前网络没连接，请先打开网络再进行更新</string>
+    <string name="guangzhou">广州</string>
+    <string name="guangzhou_pinyin">Guangzhou</string>
+    <string name="citynum_limit">最多只支持同时查看4个城市的天气~~</string>
+    <string name="had_existed">该城市记录已存在~</string>
+    <string name="back">返回</string>
+    <string name="showToast">已启动后台更新天气</string>
+    <string name="neworkconnect">无法连接网络，请检查网络</string>
+    <string name="button_add_city">添加城市</string>
+    <string name="choose_city">城市选择</string>
+    <string name="loading">加载中...</string>
+    <string name="nullstring"></string>
+    <string name="weather_time_loading_text">加载中...</string>
+
+    
+     <!-- 天气种类名称定义  雅虎 -->
+   <!--  <string name="yweather_num_00">龙卷风</string>
+    <string name="yweather_num_01">热带风暴</string>
+    <string name="yweather_num_02">飓风</string>
+    <string name="yweather_num_03">强雷雨</string>
+    <string name="yweather_num_04">雷雨</string>
+    <string name="yweather_num_05">混合雨雪</string>
+    <string name="yweather_num_06">混合雨和雨夹雪</string>
+    <string name="yweather_num_07">混合雨雪</string>
+    <string name="yweather_num_08">冻毛毛雨</string>
+    <string name="yweather_num_09">小雨</string>
+    <string name="yweather_num_10">冻雨</string>
+    <string name="yweather_num_11">阵雨</string>
+    <string name="yweather_num_12">阵雨</string>
+    <string name="yweather_num_13">阵雪</string>
+    <string name="yweather_num_14">光阵雪</string>
+    <string name="yweather_num_15">高吹雪</string>
+    <string name="yweather_num_16">雪</string>
+    <string name="yweather_num_17">冰雹</string>
+    <string name="yweather_num_18">雨夹雪</string>
+    <string name="yweather_num_19">灰尘</string>
+    <string name="yweather_num_20">大雾</string>
+    <string name="yweather_num_21">阴霾</string>
+    <string name="yweather_num_22">烟熏</string>
+    <string name="yweather_num_23">大风</string>
+    <string name="yweather_num_24">多风</string>
+    <string name="yweather_num_25">冷</string>
+    <string name="yweather_num_26">阴</string>
+    <string name="yweather_num_27">多云</string>
+    <string name="yweather_num_28">多云</string>
+    <string name="yweather_num_29">晴间多云</string>
+    <string name="yweather_num_30">晴间多云</string>
+    <string name="yweather_num_31">晴</string>
+    <string name="yweather_num_32">晴天</string>
+    <string name="yweather_num_33">晴朗</string>
+    <string name="yweather_num_34">晴朗</string>
+    <string name="yweather_num_35">混合雨和冰雹</string>
+    <string name="yweather_num_36">热</string>
+    <string name="yweather_num_37">局部地区性雷暴</string>
+    <string name="yweather_num_38">零星雷雨</string>
+    <string name="yweather_num_39">零星雷雨</string>
+    <string name="yweather_num_40">零星阵雨</string>
+    <string name="yweather_num_41">大雪</string>
+    <string name="yweather_num_42">零星阵雪</string>
+    <string name="yweather_num_43">大雪</string>
+    <string name="yweather_num_44">多云</string>
+    <string name="yweather_num_45">雷阵雨</string>
+    <string name="yweather_num_46">阵雪</string>
+    <string name="yweather_num_47">局部雷阵雨</string>
+    <string name="yweather_ds_na">无效天气</string>
+    <string name="datafromyahoo"></string> -->
+    
+    <string name="addcity_title">添加城市</string>
+    <string name="refesh">刷新</string>
+    <string name="humidity">湿度</string>
+    <string name="visibility">能见度</string>
+    <string name="wind">风速</string>
+    <string name="chill">体感</string>
+    <string name="sun_and_moon">白天</string>
+    <string name="searchcity">查询城市</string>
+    <string name="nullsearch">查询不到，请重新输入.</string>
+    <string name="connectiontimeout">查询城市超时，请重新查询.</string>
+    <string name="entercity">请输入城市名</string>
+
+    <!-- 风向定义 -->
+    <string name="N">北</string>
+    <string name="NE">东北</string>
+    <string name="E">东</string>
+    <string name="SE">东南</string>
+    <string name="S">南</string>
+    <string name="SW">西南</string>
+    <string name="W">西</string>
+    <string name="NW">西北</string>
+    <string name="updatetime">更新于  %1$s  %2$s</string>
+    <string name="weather_timeformat">EE,MM月dd日</string>
+    <string name="weather_weekformat">EE</string>
+    <string name="weather_dateformat">MM月dd日</string>
+    
+    
+    <string name="weather_num_00">晴</string>
+    <string name="weather_num_01">多云</string>
+    <string name="weather_num_02">阴</string>
+    <string name="weather_num_03">阵雨</string>
+    <string name="weather_num_04">雷阵雨</string>
+    <string name="weather_num_05">雷阵雨伴有冰雹</string>
+    <string name="weather_num_06">雨夹雪</string>
+    <string name="weather_num_07">小雨</string>
+    <string name="weather_num_08">中雨</string>
+    <string name="weather_num_09">大雨</string>
+    <string name="weather_num_10">暴雨</string>
+    <string name="weather_num_11">大暴雨</string>
+    <string name="weather_num_12">特大暴雨</string>
+    <string name="weather_num_13">阵雪</string>
+    <string name="weather_num_14">小雪</string>
+    <string name="weather_num_15">中雪</string>
+    <string name="weather_num_16">大雪</string>
+    <string name="weather_num_17">暴雪</string>
+    <string name="weather_num_18">雾</string>
+    <string name="weather_num_19">冻雨</string>
+    <string name="weather_num_20">沙尘暴</string>
+    <string name="weather_num_21">小到中雨</string>
+    <string name="weather_num_22">中到大雨</string>
+    <string name="weather_num_23">大到暴雨</string>
+    <string name="weather_num_24">暴雨到大暴雨</string>
+    <string name="weather_num_25">大暴雨到特大暴雨</string>
+    <string name="weather_num_26">小到中雪</string>
+    <string name="weather_num_27">中到大雪</string>
+    <string name="weather_num_28">大到暴雪</string>
+    <string name="weather_num_29">浮尘</string>
+    <string name="weather_num_30">扬沙</string>
+    <string name="weather_num_31">强沙尘暴</string>
+    <string name="weather_num_53">霾</string>
+    <string name="weather_num_99">无</string>
+
+    <!--
+    风向编号 中文名称 英文名称 风力编号 中文名称 英文名称
+0 无持续风向 No wind 0 微风 <10m/h
+1 东北风 Northeast 1 3-4 级 10~17m/h
+2 东风 East 2 4-5 级 17~25m/h
+3 东南风 Southeast 3 5-6 级 25~34m/h
+4 南风 South 4 6-7 级 34~43m/h
+5 西南风 Southwest 5 7-8 级 43~54m/h
+6 西风 West 6 8-9 级 54~65m/h
+7 西南风 Northwest 7 9-10 级 65~77m/h
+8 北风 North 8 10-11 级 77~89m/h
+9 旋转风 Whirl wind 9 11-12 级 89~102m/h
+    -->
+    <string name="smart_weather_wind_direct0">无持续风向</string>
+    <string name="smart_weather_wind_direct1">东北风</string>
+    <string name="smart_weather_wind_direct2">东风</string>
+    <string name="smart_weather_wind_direct3">东南风</string>
+    <string name="smart_weather_wind_direct4">南风</string>
+    <string name="smart_weather_wind_direct5">西南风</string>
+    <string name="smart_weather_wind_direct6">西风</string>
+    <string name="smart_weather_wind_direct7">西北风</string>
+    <string name="smart_weather_wind_direct8">北风</string>
+    <string name="smart_weather_wind_direct9">旋转风</string>
+    <string name="smart_weather_wind_speed0">微风</string>
+    <string name="smart_weather_wind_speed1">3-4 级</string>
+    <string name="smart_weather_wind_speed2">4-5 级</string>
+    <string name="smart_weather_wind_speed3">5-6 级</string>
+    <string name="smart_weather_wind_speed4">6-7 级</string>
+    <string name="smart_weather_wind_speed5">7-8 级</string>
+    <string name="smart_weather_wind_speed6">8-9 级</string>
+    <string name="smart_weather_wind_speed7">9-10 级</string>
+    <string name="smart_weather_wind_speed8">10-11 级</string>
+    <string name="smart_weather_wind_speed9">11-12 级</string>
+    <string name="sunrise">日出</string>
+    <string name="sunset">日落</string>
+    <string name="winddirection">风向</string>
+    <string name="windspeed">风力</string>
+    
+    <string name="degree_celsius">°C</string>
+    <string name="degree">°</string>
+    <string name="low_to_hight_symbol">~</string>
+    <string name="no_temp_data">--</string>
+    <string name="no_weather_data">网络天气</string>
+
+    <string name="search">搜索</string>
+    <!--支持日夜模式-->
+    <string name="skin_support_day_night_mode">support</string>
+
+
+    <string name="sunday" >星期日</string>
+    <string name="monday" >星期一</string>
+    <string name="tuesday" >星期二</string>
+    <string name="wednesday" >星期三</string>
+    <string name="thursday" >星期四</string>
+    <string name="friday" >星期五</string>
+    <string name="saturday">星期六</string>
+
+    <string name="ampm">AM</string>
+    <string name="date">2012-10-10</string>
+    <string name="week">星期六</string>
+    <string name="hourstring">12</string>
+    <string name="minutesstring">12</string>
+
+    <string name="alarm">整点报时</string>
+    <string name="gps">使用GPS时间</string>
+    <string name="alarmclose">整点报时：关</string>
+    <string name="alarmopen">整点报时：开</string>
+    <string name="atimeSetText">时间设置</string>
+    <string name="off">关</string>
+    <string name="on">开</string>
+
+    <string name="need_change_time_formate">yes</string>
+    <string name="dateformat">yyyy-MM-dd</string>
+    <string name="time_use_gps_time">使用GPS时间</string>
+</resources>

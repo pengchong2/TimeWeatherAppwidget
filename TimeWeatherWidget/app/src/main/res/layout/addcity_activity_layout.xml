@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addcity_bg_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/weather_all_bg"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/weather_all_bg" -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="102px"
+        android:layout_marginTop="39px"
+         >
+<!--         android:background="@drawable/weather_tip_red_bg" -->
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="36px"
+            android:text="@string/addcity_title"
+            android:textColor="@color/white"
+            android:textSize="36px"/>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="195px"
+            android:layout_height="79px"
+            android:layout_alignParentRight="true"
+             android:layout_marginLeft="19px"
+            android:layout_marginTop="33px"
+            android:background="@drawable/weather_back_style"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="33px" >
+<!--         android:background="@drawable/under_tid_bg" -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36px"
+                android:layout_marginRight="36px"
+                android:background="@drawable/networksearch"
+                android:orientation="horizontal" >
+
+            <!--     <TextView
+                    android:layout_width="164dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/searchcity"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp" /> -->
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoComplete_city"
+                    style="@style/my_AutoCompleteTextViewstyle"
+                    android:layout_width="730px"
+                    android:layout_height="76px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="0px"
+                    android:gravity="center"
+                    android:hint="@string/entercity"
+                    android:imeOptions="actionDone"
+                    android:background="@android:color/transparent"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+ 		            android:textColorHint="@color/white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_search_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="36px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_city_search__style" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/citylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41px"
+            android:orientation="horizontal"
+            android:layout_marginLeft="75px"
+            android:layout_marginRight="75px"
+            >
+
+            <GridView
+                android:id="@+id/commoncity"
+                android:layout_width="635px"
+                android:layout_height="473px"
+                android:horizontalSpacing="20px"
+                android:verticalSpacing="10px"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                 />
+
+            <LinearLayout
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="57px"
+                android:orientation="vertical" >
+<!--                 android:background="@drawable/weather_choose_city_slider_bg" -->
+
+                <Button
+                    android:id="@+id/previous_button"
+                    android:layout_width="114px"
+                    android:layout_height="108px"
+                    android:background="@drawable/weather_previous_button" />
+
+                <TextView
+                    android:id="@+id/choose_city_slider_page_num"
+                    android:layout_width="104px"
+                    android:layout_height="245px"
+                    android:gravity="center"
+                    android:textSize="30px"
+                    android:textStyle="normal"
+                    android:textColor="@color/white" />
+
+<!--                     android:background="@drawable/weather_choose_city_slider_bg" -->
+                <Button
+                    android:id="@+id/next_button"
+                    android:layout_width="114px"
+                    android:layout_height="108px"
+                    android:background="@drawable/weather_next_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="city1">Macao</string>
+    <string name="city2">Beijing</string>
+    <string name="city3">Changchun</string>
+    <string name="city4">Changsha</string>
+    <string name="city5">Chongqing</string>
+    <string name="city6">Dalian</string>
+    <string name="city7">Fuzhou</string>
+    <string name="city8">Guangzhou</string>
+    <string name="city9">Guiyang</string>
+    <string name="city10">Haerbin</string>
+    <string name="city11">Haikou</string>
+    <string name="city12">Huhehaote</string>
+    <string name="city13">Hangzhou</string>
+    <string name="city14">Hefei</string>
+    <string name="city15">Jinan</string>
+    <string name="city16">Kunming</string>
+    <string name="city17">Lanzhou</string>
+    <string name="city18">Lasa</string>
+    <string name="city19">Nanchang</string>
+    <string name="city20">Nanjing</string>
+    <string name="city21">Nanning</string>
+    <string name="city22">Ningbo</string>
+    <string name="city23">Shanghai</string>
+    <string name="city24">Shenyang</string>
+    <string name="city25">Shijiazhuang</string>
+    <string name="city26">Suzhou</string>
+    <string name="city27">Taibei</string>
+    <string name="city28">Taiyuan</string>
+    <string name="city29">Wuhan</string>
+    <string name="city30">Wulumuqi</string>      
+    <string name="city31">Xian</string>
+    <string name="city32">Xining</string>
+    <string name="city33">Xiamen</string>
+    <string name="city34">HongKong</string>
+    <string name="city35">Yinchuan</string>
+    <string name="city36">Zhengzhou</string>   
+  
+</resources>
+
+

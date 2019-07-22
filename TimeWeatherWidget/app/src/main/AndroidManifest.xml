@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.flyaudio.Weather">
+
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!--<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />-->
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="cn.flyaudio.Weather" >
+    </instrumentation>
+
+    <application
+        android:name="cn.flyaudio.weather.data.WeatherWidgetApplication"
+        android:icon="@drawable/weather_widget_icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Wallpaper.NoTitleBar" >
+        <!--android:theme="@android:style/Theme.Wallpaper.NoTitleBar" >-->
+        <uses-library android:name="android.test.runner" />
+
+        <receiver
+            android:name="cn.flyaudio.Weather.WeatherWidget"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/weather_widget" />
+
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="action.flyaudio.colortheme" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+
+
+            <intent-filter>
+                <!-- 设置可以处理的广播 -->
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <!-- 设置当前widget对应的元数据 -->
+            <!--<meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/time_widget_flyaudio3_time" />-->
+
+        </receiver>
+
+
+        <activity
+            android:name="cn.flyaudio.weather.activity.CityEditPageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            />
+        <!--android:theme="@android:style/Theme.NoTitleBar"-->
+        <activity
+            android:name="cn.flyaudio.weather.activity.AddCityActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize"
+            />
+        <!--android:theme="@android:style/Theme.Holo.Light.NoActionBar"-->
+        <activity
+            android:name="cn.flyaudio.weather.activity.WeatherDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:icon="@drawable/weather_widget_icon"
+            android:screenOrientation="landscape"
+            >
+            <!--android:theme="@android:style/Theme.Wallpaper.NoTitleBar"-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="cn.flyaudio.weather.service.WeatherService" >
+            <intent-filter>
+                <action android:name="cn.flyaudio.weater.RequestWeather" />
+            </intent-filter>
+        </service>
+        <!--日夜模式的广播-->
+        <receiver android:name="cn.flyaudio.weather.util.DayNightModeReciver" >
+            <intent-filter >
+                <action android:name="FLY.ANDROID.NAVI.MSG.SENDER"/>
+            </intent-filter>
+        </receiver>
+
+
+        <!--时间插件-->
+        <!--<receiver-->
+        <!--android:name="cn.flyaudio3.widget.time.TimeWidget"-->
+        <!--android:label="@string/app_name">-->
+
+        <!--<intent-filter android:priority="214748364">-->
+        <!--<action android:name="android.intent.action.BOOT_COMPLETED"/>-->
+        <!--</intent-filter>-->
+
+        <!--<intent-filter>-->
+        <!--&lt;!&ndash; 设置可以处理的广播 &ndash;&gt;-->
+        <!--<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />-->
+        <!--</intent-filter>-->
+
+        <!--&lt;!&ndash; 设置当前widget对应的元数据 &ndash;&gt;-->
+        <!--<meta-data-->
+        <!--android:name="android.appwidget.provider"-->
+        <!--android:resource="@xml/time_widget_flyaudio3_time" />-->
+        <!--</receiver>-->
+
+        <activity
+            android:name="cn.flyaudio.time.AlarmDetails"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar" />
+
+
+    </application>
+
+</manifest>

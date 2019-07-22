@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="header">#58567D</color>
+<color name="whiteColor">#111111</color>
+<color name="saturday">#03aefd</color>
+<color name="sunday">#ff4e00</color>
+<color name="pinyin">#02c5fd</color>
+
+<color name= "widget_color">#111111</color>
+</resources>

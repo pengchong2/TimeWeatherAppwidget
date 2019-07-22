@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <cn.flyaudio.weather.view.ViewFlow
+        android:layout_width="659dp"
+        android:layout_height="292dp"
+        android:duplicateParentState="true"
+        android:gravity="center" >
+    </cn.flyaudio.weather.view.ViewFlow>
+
+    <cn.flyaudio.weather.view.MarqueeTextView
+        android:layout_width="280sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textSize="32sp" />
+
+    <cn.flyaudio.weather.view.MarqueeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="0dp"
+        android:textSize="24sp" />
+
+
+</FrameLayout>

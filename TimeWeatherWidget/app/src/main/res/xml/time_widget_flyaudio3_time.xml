@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	在一个XML文件中描述Widget元数据，
+	定义一个Widget的基本特性，
+	例如布局尺寸，android:minWidth="30dip" android:minHeight="30dip" 
+	初始布局资源，android:initialLayout="@layout/main"
+	刷新频率(1.5以后已经没有用了)，android:updatePeriodMillis="400000" 
+	以及（可选的）创建时加载的一个配置活动。
+ -->
+<appwidget-provider
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:minWidth="400px" 
+  	android:minHeight="157px" 
+  	android:updatePeriodMillis="0" 
+
+  	android:previewImage="@drawable/time_preview" >
+	<!--android:initialLayout="@layout/time_flyaudio3_time_layout"-->
+</appwidget-provider>

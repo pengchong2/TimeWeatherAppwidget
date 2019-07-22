@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weather_time_relativelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="214px"
+    android:background="@drawable/weather_select_button_style"
+
+    >
+
+
+    <TextView
+        android:id="@+id/weather_time_cityname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31px"
+        android:layout_marginTop="31px"
+        android:clickable="false"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/guangzhou"
+        android:textColor="@color/white"
+        android:textSize="36px"
+
+        />
+    <!--android:background="@drawable/weather_select_button_style_night"-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/weather_time_temp_linear"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:id="@+id/weather_time_weather_icon"
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:layout_marginLeft="11px"
+            android:layout_marginBottom="18px"
+            />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/weather_time_temp_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <!-- weather current temp num -->
+
+        <TextView
+            android:id="@+id/weather_time_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/hourstring"
+            android:textColor="@color/white"
+            android:textSize="30px"
+            android:layout_marginBottom="37px"
+            android:layout_marginLeft="31px"
+            />
+
+        <!-- weather current temp icon -->
+
+        <ImageView
+            android:layout_width="10px"
+            android:layout_height="10px"
+            android:layout_marginTop="9px"
+            android:background="@drawable/weather_unit_small_temp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/weather_time_linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        >
+
+        <!--风向-->
+        <TextView
+            android:id="@+id/weather_time_windDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39px"
+            android:textColor="@color/white"
+            android:textSize="26px"
+            android:layout_marginBottom="37px"
+            />
+
+        <!--风速-->
+        <TextView
+            android:id="@+id/weather_time_windSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7px"
+            android:layout_toRightOf="@+id/weather_time_windDirection"
+            android:textColor="@color/white"
+            android:textSize="26px"
+            />
+
+        <LinearLayout
+            android:id="@+id/weather_time_low_hight_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@+id/weather_time_windSpeed"
+            android:orientation="horizontal"
+            android:layout_marginRight="31px"
+            android:layout_marginBottom="37px"
+            >
+
+            <TextView
+                android:id="@+id/weather_time_low_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_temp_data"
+                android:textColor="@color/white"
+                android:textSize="26px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:text="@string/low_to_hight_symbol"
+                android:textColor="@color/white"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/weather_time_hight_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_temp_data"
+                android:textColor="@color/white"
+                android:textSize="26px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/degree_celsius"
+                android:textColor="@color/white"
+                android:textSize="26px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/weather_time_delete"
+        android:layout_width="165px"
+        android:layout_height="92px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="23px"
+        android:layout_marginTop="9px"
+        android:background="@drawable/weather_delete_button_style"
+        android:paddingBottom="9px"
+        android:text="@string/deletecity"
+        android:textAllCaps="false"
+        android:textColor="@drawable/weather_textcolor"
+        android:textSize="30px"
+        android:typeface="normal" />
+
+</RelativeLayout>
